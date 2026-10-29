@@ -1,5 +1,3 @@
-#! -*- coding: utf-8 -*-
-# Author: Yahui Liu <yahui.liu@unitn.it>
 
 """
 Reference:
@@ -87,7 +85,7 @@ def define_deepcrack(in_nc,
                      init_gain=0.02, 
                      gpu_ids=[]):
     net = DeepCrackNet(in_nc, num_classes, ngf, norm)
-    return init_net(net, init_type, init_gain, gpu_ids)
+    return net
 
 
 class BinaryFocalLoss(nn.Module):
